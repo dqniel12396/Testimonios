@@ -4,7 +4,7 @@ import "./App.css";
 
 // Acceder a la cadena de conexión desde el archivo .env
 const NETLIFY_API_URL = "https://api.netlify.com/sites/testimoniosud/netlify.app/db";  // Reemplazado con el nombre correcto
-const API_KEY = NETLIFY_DATABASE_URL;  // Usamos la variable de entorno
+const API_KEY = process.env.REACT_APP_NETLIFY_DB_URL;  // Usamos la variable de entorno
 
 function App() {
   const [testimonio, setTestimonio] = useState("");
