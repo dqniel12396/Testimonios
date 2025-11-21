@@ -7,9 +7,9 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://api.netlify.com',
+        target: 'https://testimoniosud.netlify.app/.netlify/functions',  // URL de las funciones desplegadas
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
+        rewrite: (path) => path.replace(/^\/api/, ''),  // Ajuste para redirigir las solicitudes a las funciones
       },
     },
   },
