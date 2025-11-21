@@ -1,8 +1,8 @@
-// firebase.js
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
+import { getFirestore, collection, addDoc, getDocs, deleteDoc, doc, query, limit } from "firebase/firestore"; // Importa limit y query
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "firebase/auth";
 
-// Tu configuración de Firebase
+// Configuración de Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyBtxzP0395h4kjV62yeiiTEld9Oz3FEBXo",
   authDomain: "testimonios-7e1ad.firebaseapp.com",
@@ -16,6 +16,7 @@ const firebaseConfig = {
 // Inicializar Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
 
-// Exportar la configuración de Firestore
-export { db, collection, addDoc, getDocs };
+export { db, auth, collection, addDoc, getDocs, deleteDoc, doc, query, limit, signInWithPopup, provider, onAuthStateChanged };

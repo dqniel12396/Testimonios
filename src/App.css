@@ -1,59 +1,142 @@
-.App {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #F7F9FC;  /* Fondo más claro para buena legibilidad */
+  color: #333333;  /* Color de texto oscuro para mejor contraste */
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
+  color: #333;
 }
 
 header {
-  background-color: #8e44ad;
-  color: white;
-  padding: 10px;
+  background-color: #5E4B8B; /* Un tono morado más suave */
+  padding: 30px 0;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
-h1 {
+header h1 {
+  font-size: 2.5rem;
   margin: 0;
+  color: #fff;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #5E4B8B;
+  margin-bottom: 10px;
 }
 
 main {
-  background-color: #fff;
   padding: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.primary-btn {
+  background-color: #6C4E8D; /* Botón violeta más suave */
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: white;
   border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #5E4B8B; /* Más oscuro al hacer hover */
 }
 
 textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
+  font-size: 1rem;
   border-radius: 8px;
-  margin: 10px 0;
   border: 1px solid #ddd;
+  margin-bottom: 10px;
+  background-color: #F9F9F9; /* Fondo gris claro */
 }
 
-button {
-  background-color: #8e44ad;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+textarea:focus {
+  border-color: #6C4E8D;  /* Color morado en el borde al enfocarse */
+  outline: none;
 }
 
-button:hover {
-  background-color: #9b59b6;
-}
-
-.testimonios-list {
+.board {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 20px;
+  justify-content: start;
 }
 
-.testimonio {
-  background-color: #f1c40f;
-  padding: 10px;
+.postit {
+  background-color: #F1C40F; /* Un color amarillo cálido */
+  padding: 20px;
+  width: 250px;
+  height: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
   border-radius: 8px;
-  width: 200px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  color: #333; /* Color de texto oscuro */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.delete-btn {
+  background-color: #E74C3C; /* Rojo para el botón de eliminar */
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #C0392B; /* Rojo más oscuro al hacer hover */
+}
+
+.admin-input {
+  padding: 12px;
+  font-size: 1rem;
+  width: 385px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  background-color: #F9F9F9;
+}
+
+.admin-input:focus {
+  border-color: #6C4E8D;
+  outline: none;
+}
+
+/* Estilo de los botones del pie de página */
+.link-btn {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  background-color: #5E4B8B;
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
 }
