@@ -140,3 +140,14 @@ footer {
   color: white;
   border-radius: 10px;
 }
+
+.primary-btn {
+  margin-bottom: 10px;  /* Agrega espacio debajo de cada botón */
+}
+
+/* Opcional: Si quieres un margen entre ellos solo cuando la pantalla es más pequeña, usa un media query */
+@media (max-width: 600px) {
+  .primary-btn {
+    margin-bottom: 15px; /* Mayor espacio en pantallas pequeñas */
+  }
+}
